@@ -12,7 +12,7 @@
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
 	<bean id="dataSourceDefault" class="org.springframework.jndi.JndiObjectFactoryBean">
-		<property name="jndiName" value="java:comp/env/jdbc/sigol_ds" />
+		<property name="jndiName" value="java:comp/env/jdbc/tactic_ds" />
 	</bean>
 
 	<!-- Hibernate -->
