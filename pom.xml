@@ -116,6 +116,12 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.tacticlogistics.model</groupId>
+			<artifactId>tactics-model</artifactId>
+			<version>1.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
 			<groupId>com.vaadin</groupId>
 			<artifactId>vaadin-server</artifactId>
 			<version>${vaadin.version}</version>
@@ -194,7 +200,6 @@
 			<version>${jersey.version}</version>
 			<scope>${jersey.scope}</scope>
 		</dependency>
-
 		<!-- Jersey JSON Jackson (2.x) entity providers support module -->
 		<dependency>
 			<groupId>org.glassfish.jersey.media</groupId>
@@ -202,7 +207,6 @@
 			<version>${jersey.version}</version>
 			<scope>${jersey.scope}</scope>
 		</dependency>
-
 		<!-- Jersey extension module providing support for Spring 3 integration -->
 		<dependency>
 			<groupId>org.glassfish.jersey.ext</groupId>
@@ -223,6 +227,11 @@
 					<artifactId>spring-beans</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-spring-boot-starter</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 
